@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/myicon.JPG">
+    <title>Ritsuki Ishikawa</title>
+    <meta property="og:title" content="Ritsuki Ishikawa">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Ritsuki Ishikawaのポートフォリオ">
+    <meta property="og:url" content="https://ritsuki-i.github.io/my-portfolio/">
+    <meta property="og:site_name" content="Ritsuki Ishikawa">
+    <meta property="og:image" content="img/myicon.JPG">
+    <meta property="al:web:should_fallback" content="false">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156417285-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156417285-3');
+    </script>
+</head>
+<body class="body">
+    <div class="header">
+        <a href="./"><div class="header-logo">Ritsuki Ishikawa</div></a>
+        <div class="hamburger-menu">
+            <span class="nav_toggle">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+            <nav class="nav">
+                <ul class="nav_menu_ul">
+                    <li class="nav_menu_li"><a href="./">Home</a></li>
+                    <li class="nav_menu_li"><a href="about.html">About</a></li>
+                    <li class="nav_menu_li"><a href="application.html">Applications</a></li>
+                    <li class="nav_menu_li"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-menu">
+            <ul>
+                <li><a href="./" style="color: rgb(0, 0, 0);">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="application.html">Applications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <canvas id="canvas" class="fadeTarget"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+        integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+    
+    <div class="footer-index">
+        <div class="sitelink">
+            <p><input type="checkbox" id="sitelink" class="sitelink-checkbox">サイトのQRコードを表示</p>
+            <div class="qr">
+                <img src="img/QR.png" alt="ポートフォリオのQR">
+            </div>
+        </div>
+        <p>&copy; 2023 Ritsuki Ishikawa</p>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>

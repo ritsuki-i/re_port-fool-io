@@ -1,0 +1,465 @@
+/* 共通部分 */
+body {
+    font-family: "コーポレート明朝 ver2" ;
+    background: linear-gradient(rgb(255, 157, 0),white,white,white,white,rgb(255, 157, 0));
+}
+body .header{
+    height: 90px;
+}
+.header-logo{
+    color: black;
+    float: left;
+    font-size: 30px;
+    padding: 20px 40px;
+}
+/* ハンバーガーメニュー */
+.nav_toggle {
+    float: right;
+    margin: 30px 20px;
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+}
+.nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+}
+.nav_toggle i:nth-child(1) {
+    top: 0;
+}
+.nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.nav_toggle i:nth-child(3) {
+    bottom: 0;
+}
+.nav_toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+
+.nav_toggle.show i:nth-child(2) {
+    opacity: 0;
+}
+
+.nav_toggle.show i:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+.nav {
+    background-color: rgba(0, 0, 0, 0.648);
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+}
+.nav.show {
+    opacity: 1;
+    visibility: visible;
+}
+.nav_menu_ul a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: transform .4s;
+}
+.nav_menu_li{
+    list-style: none;
+    margin-top: 20px;
+}
+ .nav_menu_ul a:hover{
+    color: rgba(124, 124, 124, 0.548);
+ }
+
+
+.header-menu a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.338);
+    transition: color .4s;
+}
+.root{
+    color: rgb(0, 0, 0);
+}
+.header-menu a:hover{
+    color: rgb(0, 0, 0);
+}
+.header-menu li{
+    float: left;
+    padding: 33px 20px;
+    list-style: none;
+}
+.main{
+    height: auto;
+    margin-top: 70px;
+    margin-left: 5em;
+}
+.title {
+    padding-left: 0.3em;
+    border-left: 0.3em solid rgb(0, 0, 0);
+}
+.footer{
+    margin-top: 15vh;
+    height: 90px;
+}
+.sitelink {
+    float: right;
+}
+.qr{
+    display: none;
+}
+.sitelink p{
+    margin-right: 20px;
+}
+.footer p{
+    float: left;
+    padding: 20px 40px;
+}
+
+
+/* homepage*/
+.footer-index {
+    height: 80px;
+}
+.footer-index p {
+    float: left;
+    padding: 20px 40px;
+}
+#canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* aboutpage */
+.myicon{
+    height: 250px;
+}
+.name{
+    justify-content: center;
+}
+.name img{
+    padding-right: 50px;
+}
+.name p{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+.about-table{
+    border-collapse:  collapse; 
+    table-layout: fixed;
+}
+.about-table-title{
+    border-bottom: solid 1px;
+}
+.about-table td{
+    font-size: 20px;
+}
+.about-table-title-year{
+    width: 15vw;
+    padding-left: 5vw;
+    font-weight: bold;
+}
+.about-table-year{
+    width: 15vw;
+    padding-left: 5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+.about-table-contents{
+    width: 65vw;
+    padding-left: 5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+.about-table-line{
+    transition: background-color .4s;
+}
+.about-table-line:hover {
+    background-color: rgba(0, 0, 0, 0.149);
+}
+
+
+
+/* applicationpage */
+.col-sm-4 a{
+    color: black;
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}
+.app-card {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+  }
+  
+.app-card {
+    margin-top: 10vh;
+    width: 25vw;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.204);
+    border-radius: 1.5em;
+    transition: transform .4s;
+  }
+
+.app-card img{
+    border-radius: 1.5em;
+}
+  
+.app-card h5 {
+    font-size: 3vh;
+  }
+  
+.app-card p {
+    margin-top: 20px;
+    height: 60px;
+    font-size: 2vh;
+  }
+  
+.app-card:hover {
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+.my-4{
+    padding: 10px;
+}
+
+
+/* contactpage */
+.field{
+    margin-bottom: 30px;
+}
+.label-submit{
+    font-size: 20px;
+}
+.input,.textarea{
+    font-size: 20px;
+    padding-left: 20px;
+    padding: calc(0.375em - 1px) calc(0.625em - 1px);
+    width: 50vw;
+}
+.textarea{
+    width: 50vw;
+    height: 20vh;
+}
+button{
+    font-family: "コーポレート明朝 ver2" ;
+    border-radius: 10%;
+    font-size: 20px;
+    margin-top: 1vh;
+    margin-right: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: color .4s;
+    transition: background-color .4s;
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.submit{
+    font-family: "コーポレート明朝 ver2";
+    border-radius: 10%;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-right: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: color .4s;
+    transition: background-color .4s;
+}
+.submit:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+/* レスポンシブ対応 */
+
+@media screen and (min-width: 960px) {
+    .name{
+        display: flex;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+    .app-card img {
+        height: 20vh;
+    }
+    
+}
+@media screen and (min-width: 520px) and (max-width: 960px){
+    .header-menu {
+        display: none;
+    }
+    
+    .header-logo {
+        font-size: 25px;
+    }
+    
+    .body .header {
+        height: 40px;
+    }
+    
+    .app-card {
+        margin-top: 5vh;
+        width: 90vw;
+        height: 40vw;
+        margin-left: 0vw;
+        margin-left: 0vw;
+    }
+    
+    .app-card img {
+        width: 30vw;
+        float: left;
+    }
+    
+    .app-card h5 {
+        font-size: 5vw;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    
+    .app-card p {
+        height: 10px;
+        margin-top: 0px;
+        font-size: 3vw;
+    }
+    
+    .row {
+        display: block;
+    }
+    
+    .main {
+        margin-left: 1rem;
+    }
+    
+    .play-btn {
+        margin-top: 10vw;
+    }
+    .about-table .about-table-year {
+        font-size: 15px;
+    }
+    
+    .about-table .about-table-contents {
+        font-size: 20px;
+    }
+    .name {
+        display: flex;
+        align-items: center;
+    }
+    .name div{
+        align-items: center;
+    }
+    .name img {
+        padding-right: 1vw;
+    }
+    .myicon {
+        margin-top: 25px;
+        height: 22vw;
+    }
+    
+    .name p {
+        font-size: 4vw;
+        padding-left: 1vw;
+        padding-right: 0px;
+    }
+        
+}
+
+@media screen and (max-width: 520px) {
+    .title{
+        font-size: 20px;
+    }
+    .header-menu {
+        display: none;
+    }
+    
+    .header-logo {
+        font-size: 25px;
+    }
+    
+    .body .header {
+        height: 40px;
+    }
+    
+    .app-card {
+        margin-top: 5vh;
+        width: 90vw;
+        height: 40vw;
+        margin-left: 0vw;
+        margin-left: 0vw;
+    }
+    
+    .app-card img {
+        width: 35vw;
+        float: left;
+    }
+    
+    .app-card h5 {
+        font-size: 5vw;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    
+    .app-card p {
+        height: 10px;
+        margin-top: 5vw;
+        font-size: 10px;
+    }
+    #long {
+        font-size: 4vw;
+    }
+    
+    .row {
+        display: block;
+    }
+    
+    .main {
+        margin-left: 1rem;
+    }
+    
+    .play-btn {
+        margin-top: 5vw;
+        height: auto;
+    }
+    .about-table .about-table-year{
+        font-size: 10px;
+    }
+    .about-table .about-table-contents {
+        font-size: 15px;
+    }
+    .name p{
+        font-size: 5vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .name{
+        text-align: center;
+    }
+    .name img{
+        height: 50vw;
+        padding-right: 0;
+    }
+    .sitelink{
+        float: left;
+    }
+    .footer-index p{
+        padding: 0 40px;
+    }
+    .footer p {
+        padding: 0 40px;
+    }
+
+}
