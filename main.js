@@ -38,6 +38,7 @@ const init = () => {
   const geometry7 = new THREE.BoxGeometry(50, 50, 50);
   const geometry8 = new THREE.BoxGeometry(50, 50, 50);
   const geometry9 = new THREE.BoxGeometry(50, 50, 50);
+  const geometry10 = new THREE.BoxGeometry(90, 90, 90);
 
   // // マテリアルにテクスチャーを設定
   const loadPic = new THREE.TextureLoader();
@@ -113,6 +114,14 @@ const init = () => {
     new THREE.MeshBasicMaterial({ map: loadPic.load('textures/side.jpeg') }),
     new THREE.MeshBasicMaterial({ map: loadPic.load('textures/side.jpeg') })
   ];
+  let material10 = [
+    new THREE.MeshBasicMaterial({ map: loadPic.load('img/piedpiper.png') }),
+    new THREE.MeshBasicMaterial({ map: loadPic.load('img/piedpiper.png') }),
+    new THREE.MeshBasicMaterial({ map: loadPic.load('textures/side.jpeg') }),
+    new THREE.MeshBasicMaterial({ map: loadPic.load('textures/side.jpeg') }),
+    new THREE.MeshBasicMaterial({ map: loadPic.load('textures/side.jpeg') }),
+    new THREE.MeshBasicMaterial({ map: loadPic.load('textures/side.jpeg') })
+  ];
 
   // メッシュを作成
   const earthMesh1 = new THREE.Mesh(geometry1, material1);
@@ -124,6 +133,7 @@ const init = () => {
   const earthMesh7 = new THREE.Mesh(geometry7, material7);
   const earthMesh8 = new THREE.Mesh(geometry8, material8);
   const earthMesh9 = new THREE.Mesh(geometry9, material9);
+  const earthMesh10 = new THREE.Mesh(geometry10, material10);
 
   earthMesh2.position.set(-100, -100, -500);
   earthMesh3.position.set(90, 130, -70);
@@ -133,6 +143,7 @@ const init = () => {
   earthMesh7.position.set(300, -250, -250);
   earthMesh8.position.set(-300, 200, 250);
   earthMesh9.position.set(-200, 300, -100);
+  earthMesh10.position.set(-90, -200, 200);
 
   // 3D空間にメッシュを追加
   scene.add(earthMesh1);
@@ -144,6 +155,7 @@ const init = () => {
   scene.add(earthMesh7);
   scene.add(earthMesh8);
   scene.add(earthMesh9);
+  scene.add(earthMesh10);
 
   // 平行光源
   const directionalLight = new THREE.DirectionalLight(0xFFFFFF);
@@ -210,6 +222,10 @@ const init = () => {
     earthMesh9.rotation.x -= 0.001;
     earthMesh9.rotation.y -= 1.001;
     earthMesh9.rotation.z -= 0.001;
+
+    earthMesh10.rotation.x -= 10.001;
+    earthMesh10.rotation.y -= 0.001;
+    earthMesh10.rotation.z -= 0.001;
     // レンダリング
     renderer.render(scene, camera);
 

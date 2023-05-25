@@ -12,6 +12,14 @@ body .header{
     font-size: 30px;
     padding: 20px 40px;
 }
+.header-logo-collapse{
+    color: black;
+    float: left;
+    font-size: 30px;
+    padding: 20px 40px;
+    position: fixed;
+}
+
 /* ハンバーガーメニュー */
 .nav_toggle {
     float: right;
@@ -85,17 +93,34 @@ body .header{
     color: rgba(0, 0, 0, 0.338);
     transition: color .4s;
 }
+.header-menu li{
+    float: left;
+    padding: 33px 20px;
+    list-style: none;
+}
 .root{
     color: rgb(0, 0, 0);
 }
 .header-menu a:hover{
     color: rgb(0, 0, 0);
 }
-.header-menu li{
+.header-menu-collapse{
+    margin-left: 291px;
+}
+.header-menu-collapse a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.338);
+    transition: color .4s;
+}
+.header-menu-collapse li{
     float: left;
     padding: 33px 20px;
     list-style: none;
 }
+.header-menu-collapse a:hover {
+    color: rgb(0, 0, 0);
+}
+
 .main{
     height: auto;
     margin-top: 70px;
@@ -141,11 +166,22 @@ body .header{
 .myicon{
     height: 250px;
 }
+.myicon:hover{
+    animation: rotate linear 0.0001s infinite;;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .name{
     justify-content: center;
 }
-.name img{
-    padding-right: 50px;
+.name-school-about{
+    padding-left: 50px;
 }
 .name p{
     font-size: 30px;
@@ -230,7 +266,7 @@ body .header{
 .app-card:hover {
     box-shadow: none;
     transform: translateY(4px);
-  }
+}
 .my-4{
     padding: 10px;
 }

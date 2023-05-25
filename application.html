@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/myicon.JPG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <title>Ritsuki Ishikawa</title>
     <meta property="og:title" content="Ritsuki Ishikawa">
     <meta property="og:type" content="website">
@@ -16,7 +17,7 @@
 </head>
 <body>
     <div class="header">
-        <a href="index.html"><div class="header-logo">Ritsuki Ishikawa</div></a>
+        <div class="header-logo-collapse">Ritsuki Ishikawa</div>
         <div class="hamburger-menu">
           <span class="nav_toggle">
             <i></i>
@@ -32,7 +33,7 @@
             </ul>
           </nav>
         </div>
-        <div class="header-menu">
+        <div class="header-menu-collapse">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -103,5 +104,16 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="app.js"></script>
+    <script>
+      $('.header-logo-collapse').click(function () {
+        $(".header-logo-collapse").addClass("animate__animated animate__hinge");
+        setTimeout(function () {
+          $(".app-card").addClass("animate__animated animate__hinge");
+        }, 1000);
+        setTimeout(function () {
+          $("body").addClass("animate__animated animate__hinge");
+        }, 1500);
+      })
+    </script>
 </body>
 </html>
