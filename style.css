@@ -348,6 +348,9 @@ button:hover{
     .header-logo {
         font-size: 25px;
     }
+    .header-logo-collapse {
+        font-size: 25px;
+    }
     
     .body .header {
         height: 40px;
@@ -431,6 +434,9 @@ button:hover{
     }
     
     .header-logo {
+        font-size: 25px;
+    }
+    .header-logo-collapse {
         font-size: 25px;
     }
     
