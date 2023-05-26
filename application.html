@@ -108,11 +108,14 @@
       $('.header-logo-collapse').click(function () {
         $(".header-logo-collapse").addClass("animate__animated animate__hinge");
         setTimeout(function () {
+          $(".app-card img").addClass("animate__animated animate__hinge");
+        }, 10);
+        setTimeout(function () {
           $(".app-card").addClass("animate__animated animate__hinge");
-        }, 1000);
+        }, 1500);
         setTimeout(function () {
           $("body").addClass("animate__animated animate__hinge");
-        }, 1500);
+        }, 3000);
       })
     </script>
 </body>

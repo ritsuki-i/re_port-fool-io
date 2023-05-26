@@ -255,13 +255,13 @@ body .header{
   
 .app-card h5 {
     font-size: 3vh;
-  }
+}
   
 .app-card p {
     margin-top: 20px;
     height: 60px;
     font-size: 2vh;
-  }
+}
   
 .app-card:hover {
     box-shadow: none;
@@ -337,6 +337,9 @@ button:hover{
 }
 @media screen and (min-width: 520px) and (max-width: 960px){
     .header-menu {
+        display: none;
+    }
+    .header-menu-collapse {
         display: none;
     }
     
@@ -419,6 +422,9 @@ button:hover{
         font-size: 20px;
     }
     .header-menu {
+        display: none;
+    }
+    .header-menu-collapse {
         display: none;
     }
     

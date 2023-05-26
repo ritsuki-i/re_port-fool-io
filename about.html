@@ -149,6 +149,12 @@
     <script>
         $('.header-logo-collapse').click(function () {
             $(".header-logo-collapse").addClass("animate__animated animate__hinge");
+            setTimeout(function () {
+                $("table").addClass("animate__animated animate__hinge");
+            }, 1000);
+            setTimeout(function () {
+                $(".header-menu-collapse").addClass("animate__animated animate__hinge");
+            }, 3000);
         })
     </script>
 </body>
